@@ -7,8 +7,8 @@ class PlantsController < ApplicationController
     
        # POST /plants
        def create
-        bird = Plant.create(plant_params)
-        render json: bird, status: :created
+        plant = Plant.create(plant_params)
+        render json: plant, status: :created
       end
       # GET /plants/:id
       def show
